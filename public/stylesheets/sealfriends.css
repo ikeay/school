@@ -1,0 +1,71 @@
+body { 
+background: #F7EFEB url(../images/bg.png) repeat;
+color: #333;
+font: .9em Helvetica, Arial,'ÉqÉâÉMÉmäpÉS Pro W3','Hiragino Kaku Gothic Pro',osaka,'ÉÅÉCÉäÉI',Meiryo,'MS PÉSÉVÉbÉN','MS PGothic';
+}
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { color: #000; }
+a:visited { color: #666; }
+a:hover { color: #fff; background-color:#000; }
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+#contents {
+background: #fff;
+padding: 20px 20px 20px 20px;
+margin: 20px 20px 20px 20px;
+-webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.4); /* Safari, Chromeóp */
+	-moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.4); /* Firefoxóp */
+	box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.4); /* CSS3 */
+border-radius: 0px 0px 20px 20px;        /* CSS3ëêàƒ */  
+-webkit-border-radius: 20px;    /* Safari,Google Chromeóp */  
+-moz-border-radius: 20px;   /* Firefoxóp */
+}

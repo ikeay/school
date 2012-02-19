@@ -1,0 +1,27 @@
+<h1>Listing scores</h1>
+
+<table>
+  <tr>
+    <th>Student</th>
+    <th>Course</th>
+    <th>Score</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @scores.each do |score| %>
+  <tr>
+    <td><%= score.student_id %></td>
+    <td><%= score.course_id %></td>
+    <td><%= score.score %></td>
+    <td><%= link_to 'Show', score %></td>
+    <td><%= link_to 'Edit', edit_score_path(score) %></td>
+    <td><%= link_to 'Destroy', score, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Score', new_score_path %>

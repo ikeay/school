@@ -1,0 +1,19 @@
+<h1>Search for Students</h1>
+
+<%= form_tag do %>
+
+<div class="field">
+  <%= label_tag :course %>
+  <%= select_tag :course, options_from_collection_for_select(Course.all, :id, :name) %>
+</div>
+
+<div class="field">
+  <%= label_tag :score %>
+  <%= select_tag :score, options_for_select([['A', 'A'], ['B', 'B'], ['C', 'C'], ['D', 'D']]) %>
+</div>
+
+<div class="actions">
+  <%= submit_tag 'Search' %>
+</div>
+
+<% end %>

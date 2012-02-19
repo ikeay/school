@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+
+<p>
+  <b>Picture:</b>
+  <%= image_tag picture_student_path(@student), :height => '64' %>
+</p>
+
+  <b>Name:</b>
+  <%= @student.name %>
+</p>
+
+<p>
+  <b>Faculty:</b>
+  <%= @student.faculty_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>

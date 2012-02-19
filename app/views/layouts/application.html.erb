@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=Shift JIS" />
+  <title>School</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+<div id ="contents">
+<%= yield %>
+<br><br>
+<%= image_tag("rails.png") %>
+<br>
+</div>
+</body>
+</html>

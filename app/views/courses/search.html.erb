@@ -1,0 +1,11 @@
+<h1>Search for Courses</h1>
+
+<%= form_tag do %>
+<div class="field">
+  <%= label_tag :Number %>
+  <%= select_tag :number, options_for_select([['1', '1'], ['2', '2'], ['3', '3'], ['4', '4']]) %>
+</div>
+<div class="actions">
+  <%= submit_tag 'Search' %>
+</div>
+<% end %>

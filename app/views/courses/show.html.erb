@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+<b>Name:</b>
+<%= @course.name %>
+</p>
+
+<p>
+<b>Credit:</b>
+<%= @course.credit %>
+</p>
+
+<p>
+<b>Programming:</b>
+<%= @course.programming %>
+</p>
+
+ <div class="field">
+ <%= form_tag ({:action => :document}, :multipart => true) do %>
+<%= label_tag :upload_document %>
+<%= file_field_tag 'document' %>
+<div class="actions">
+   <%= submit_tag %>
+ </div>
+ <% end %>
+ </div>
+  
+<%= link_to 'Back', courses_path%>
